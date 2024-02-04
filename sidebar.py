@@ -83,7 +83,7 @@ class SideBarInterface(tk.Frame):
                 index+=2
         return expresion
     def set_result(self):
-        """Calculates the result rounds and outputs it to the GUI interface."""
+        """Calculates the result, rounds its, and outputs it to the GUI interface."""
         output = self._pemdas_calc(self._return_valid_expression_from_buttons())
         print(output)
         self.operation_display.config(text=f"{output:.{self.floating_point_digits}f}")
