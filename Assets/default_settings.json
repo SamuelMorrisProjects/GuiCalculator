@@ -1,0 +1,25 @@
+{
+    "Settings":{
+        "ButtonSettings":{
+            "FontFamily":"Cascadia Code",
+            "ButtonBackground":"#061115",
+            "ButtonForeground":"#bacacf",
+            "DisplayBackground":"#0b0a10",
+            "DisplayForeground":"#cef7fc",
+            "NumberDisplayLimit":25
+        },
+        "SidebarSettings":{
+            "FontFamily":"Cascadia Code",
+            "ButtonBackground":"#061115",
+            "ButtonForeground":"#bacacf",
+            "DisplayBackground":"#0b0a10",
+            "DisplayForeground":"#cef7fc",
+            "RoundToDigits":2
+        },
+        "Misc":{
+            "SetDpiAwareness":1,
+            "Ico":"Calc.Ico"
+        }
+
+    }
+}
