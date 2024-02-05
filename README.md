@@ -1,7 +1,7 @@
 
 
 # What is it ?
-A GUI calculator that follows pemdas and the order of operations. It also has a sleek interface that is both easy to customize and use. You can run the program by downloading the repository and running main.py
+A GUI calculator that follows pemdas. It also has a sleek interface that is both easy to customize and use. You can run the program by downloading the repository and running main.py
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/0fy10C7/Image.png" alt="Image" border="0"></a>
 
