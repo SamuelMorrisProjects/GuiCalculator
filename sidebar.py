@@ -20,7 +20,7 @@ class SideBarInterface(tk.Frame):
 
         #Operatators
        
-        self.sidebar_buttons= ("+","(",")","-","*","/")
+        self.sidebar_buttons= ("+","(",")","-","*","/", "=")
 
         self.button_frame =button_frame_obj
 
@@ -37,11 +37,9 @@ class SideBarInterface(tk.Frame):
         """Composes the buttons"""
         self.columnconfigure(0,weight=1)
         for index,element in enumerate(self.sidebar_buttons):
-            operation_button = tk.Button(self,height=5,width=20, background=self.sidebar_button_background, foreground=self.sidebar_button_foreground, font=self.butn_font, text=element, command=partial(self.button_frame.output_to_display, element))
+            if element !="=":
+                operation_button = tk.Button(self,height=5,width=20, background=self.sidebar_button_background, foreground=self.sidebar_button_foreground, font=self.butn_font, text=element, command=partial(self.button_frame.output_to_display, element))
+            else:
+                operation_button = tk.Button(self,height=7,width=20, background=self.sidebar_button_background, foreground=self.sidebar_button_foreground, font=self.butn_font, text=element, command=self.set_result)
             operation_button.grid(column=0,row=index+1, sticky="NSEW",)
             self.rowconfigure(index+1,weight=1)
-        
-        equal_button =tk.Button(self,height=4,width=20, background=self.sidebar_button_background, foreground=self.sidebar_button_foreground, font=self.butn_font, text='=', command=self.set_result)
-        equal_button.grid(column=0,row=7, sticky="NSEW",)
-        equal_button.rowconfigure(7,weight=1)
-
